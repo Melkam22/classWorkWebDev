@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>On click Events</title>
+     
+
+    <style>
+                            /* container */
+#one1 {
+    width: 350px;
+    height: 500px;
+    border: 1px solid blue;
+    margin-left: 220px;
+    z-index: 1;
+    position: relative;
+}
+.one-one {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    left: 330px;
+    margin-top: 10px;
+    z-index: 2;
+}
+h2 {
+    text-align: center;
+}
+
+                            /* button effect */
+   .myBtn {
+        width: 150px;
+      
+        height: 50px;
+        padding: 5px 5px;
+        margin-top: 20px;
+        background: darkgrey;
+        text-decoration: none;
+        z-index: 2;
+    } 
+    </style>
+</head>
+<body>
+
+                                <!-- another container -->
+
+    <div id="one1">
+
+             
+
+            
+        </div>
+        <button class="one-one" onclick="container()" id="change">Click</button>
+    
+                                    <!-- button effect only -->
+
+        <button class="myBtn" onclick="main()" id="clc">Click me to change</button>
+
+                             
+   
+    <script src="onclicking.js"></script>
+</body>
+</html>

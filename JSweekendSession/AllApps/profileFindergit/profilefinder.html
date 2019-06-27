@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="profilefinder.css">
+</head>
+<body>
+
+                                    <!-- main container  -->
+
+    <div class="main">
+
+        <div class="heading"> 
+          <i class="fa fa-github-alt fa-4x" aria-hidden="true"></i> <h3>Github Profile Finder</h3>
+    </div>
+                                    <!-- search-bar, button & icon container -->
+
+        <div class="search">
+                <input type="text" class="btn" id="user"> <button onclick="fn()">Search</button>
+        </div>
+
+                                    <!--  github fetced-image -->
+
+        <div id="imagebox" class="imagebox">
+            <img src="" id="image" alt="" >
+        </div>
+
+                            <!-- the four boxes for fetched info from github -->
+
+        <div class="profile" id="profile">
+            <div class="box1"><h2>User Name: <span id="box1"></h2></span> </div>
+
+            <div class="box2"><h2>Repository: <span id="box2"></h2></span></div>
+
+            <div class="box3"><h2>Following: <span id="box3"></h2> </span></div>
+
+            <div class="box4"><h2>Url: <span id="box4"></h2></span> </div>
+        </div>
+    </div>
+  
+    <script src="profilefinder.js"></script>
+</body>
+</html>

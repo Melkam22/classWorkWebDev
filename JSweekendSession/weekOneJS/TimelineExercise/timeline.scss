@@ -1,0 +1,170 @@
+
+
+                        /* variables */
+$sil: silver;
+$bla: black;
+$bl: blue;
+$abs: absolute;
+$gr: green;
+$rel: relative;
+$gol: gold;
+$re: red;
+$full: 100%;
+$half: 50%;
+$quarter: 25%;
+$fl: flex;
+$bor: 1px solid black;
+$third: 32.3%;
+                        /* mixin 
+@mixin .timeline ($rel, $full, $margin) {
+    $rel: position-relative;
+    $full: 100%;
+    $margin: 0 auto;
+}
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+                                    /* flexbox */
+
+.flex {
+    width: $full;
+    height: auto;
+    display: $fl;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-evenly;
+        .one {
+            width: 320px;
+            height: 300px;
+            border: $bor;
+        }
+        .two {
+            width: 320px;
+            height: 300px;
+            border: $bor;
+        }
+        .three {
+            width: 320px;
+            height: 300px;
+            border: $bor;
+        }
+}
+                                    /* timeline */
+
+.timeline {
+    position: $rel;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+     
+}
+.timeline::after {
+    content: '';
+    position: $abs;
+    background: $gol;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 20px;
+    position: $rel;
+    background: $sil;
+    width: 42%;
+    height: 15%;
+    width: 40%;
+    margin-left: 20px;
+    border-radius: 25px 25px 25px 25px;
+} 
+.container::after {
+    content: '';
+    position: $abs;
+    width: 25px;
+    height: 25px;
+    right: -16%;
+    background: $bl;
+    border: 4px solid yellow;
+    top: 15px;
+    z-index: 1;
+    border-radius: $half;
+}
+  
+
+.left {
+    left: 0;
+}
+.right {
+    left: 52%;
+}
+.left::before {
+    content: '';
+    height: 0;
+    position: $abs;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: -3%;
+    border:medium solid $gr;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent $gr;
+}
+.right::before {
+    content: '';
+    height: 0;
+    position: $abs;
+    top: 15%;
+    width: 0;
+    left: -3%;
+    border: medium solid $gr;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent $gr transparent transparent;
+}
+.right::after {
+    left: -11%;
+}
+.content {
+    padding: 10px 20px;
+    background: $sil;
+    position: $rel;
+    border-radius: 6px;
+}
+.content h2 {
+    color: $re;
+    font-size: 25px;
+    box-shadow: 4px;
+}
+.content p {
+    color: $bl;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media only screen and(max-width:600px) {
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        .container {
+            .content {
+            width: 96%;
+            margin-top: 10%;
+        }  }
+
+        .container {
+            .content {
+                width: 96%;
+                margin-top: 10%;  
+            }
+        }
+    }
+}
+
+

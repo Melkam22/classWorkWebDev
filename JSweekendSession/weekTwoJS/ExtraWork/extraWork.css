@@ -1,0 +1,442 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(asset/cityseattle.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+                            /* the landing image */
+.landingimg {
+    width: 100%;
+    height: 76vh;
+    background-image: url(asset/clouds.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+.landingimg .icon1 {
+    width: 7%;
+    height: 15%;
+    background: rgba(255,255,255,0.5);
+    position: relative;
+    margin-top: 27%;
+    left: 2%;
+}
+.icon1 .fa {
+    padding: 18% 35%;
+}
+.icon1 .fa:hover{
+    color: lightgrey;
+}
+.landingimg .icon2 {
+    width: 7%;
+    height: 15%;
+    background: rgba(255,255,255,0.5);
+    position: relative;
+    margin-top: 27%;
+    left: 5%;
+}
+.icon2 .fa {
+    padding: 18% 35%;
+}
+.icon2 .fa:hover{
+    color: lightgrey;
+}
+.landingimg .icon3 {
+    width: 7%;
+    height: 15%;
+    background: rgba(255,255,255,0.5);
+    position: relative;
+    margin-top: 27%;
+    left: 8%;
+}
+.icon3 .fa {
+    padding: 18% 35%;
+}
+.icon3 .fa:hover{
+    color: lightgrey;
+}
+
+                            /* slide nav bar */
+
+.burger {
+    width: 100%;
+}
+.slidePage{
+    width: 96%;
+    height: 60px;
+    background:  rgba(28,120,79,0.5);
+    position: relative;
+    left: -96%; top: 0;
+    transition: 1s;
+}
+#icon:checked +.slidePage{
+    left: 0;
+}
+.burger .fa {
+    position: absolute;
+    left: 96%;
+    position: fixed;
+    top: 10px;
+}
+.burger .fa:hover {
+    color: darkgrey;
+}
+
+                    /* boxes with icon and hover effect */
+
+.first {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.first .box {
+    width: calc(360px - 30px);
+    height: calc(300px - 30px);
+    position: relative;
+    background: rgba(128,120,179,0.6);
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-left: 6%;
+}
+
+.first .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.first .box:hover .icon {
+    top: 10px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+} 
+
+.first .box .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    transition: 0.5s;
+    color: rgba(28,120,79,0.8);    
+}
+.first .box:hover .icon .fa{
+    font-size: 40px;
+}
+
+.first .box .content {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    text-align: center;
+    transition: 0.5s;
+}
+.first .box .content h3 {
+    color: black;
+}
+.first .box .content p {
+    color: blue;
+    font-size: 18px;
+    text-align: justify;
+    padding: 2px 8px;
+}
+
+            /*three message boxes on a fixed background image*/
+
+.backgroundImage {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    margin-top: 20px;
+    background-image: url(asset/farm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2 {
+    position: absolute;
+    left: 40%;
+    font-size: 28px;
+    color: blue;
+
+}
+
+.backgroundImage .box1 {
+    width: 180px;
+    height: 100px;
+    margin-top: 16%;
+    margin-left: 15%;
+    position: sticky;
+    background: rgba(2,3,5,0.5);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.backgroundImage .box1 h4 {
+    text-align: center; 
+}
+
+h4 a .fa {
+     margin-left: -5%;
+     color: white;
+     font-size: 50px;
+}
+h4 a .fa:hover {
+    color: silver;
+}
+ 
+                         /*two boxes with javascript effect*/
+.javascript {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 20px;
+}
+#firstOne {
+    width: 500px;
+    height: 50vh;
+    background: rgba(84,91,33,0.5);
+    margin-left: 7%;
+}
+
+#secondOne {
+    width: 500px;
+    height: 50vh;
+    background: rgba(84,91,33,0.5);
+    margin-left: 7%;
+}
+                    /* hover effect buttons */
+#firstOne{
+    display: block;
+    z-index: 10; 
+}
+#btn {
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+     
+}
+#secondOne{
+    display: block;
+    z-index: 30;
+}
+#btn1{
+    display: inline-block;
+    z-index: 40;
+    position: relative;
+}
+
+.oneb{
+    margin-top: 20px;
+    margin-left: 23%;
+    padding: 7px 4px;
+}
+.twob {
+    margin-top: 20px;
+    margin-left: 42%;
+    padding: 7px 4px;
+}
+
+h1 {
+    text-align: center;
+    color: orange;
+}
+
+                         /* hover effect of boxes with skew */
+
+.container {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.container .boite {
+    position: relative;
+    width: 310px;
+    background: rgba(12,113,115,0.5);
+    margin-left: 6%;
+}
+                            /* we do this at the end */
+ /* .container .boite:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #00bcd4;
+    z-index: -1;
+    transform: skew(2deg, 2deg);
+}  */
+/* 
+ .container .boite:nth-child(1):before{
+    background: linear-gradient (315deg, #89ff00, #00bcd4);
+}
+
+.container .boite:nth-child(2):before{
+    background: linear-gradient (315deg, #e91e63, #5d02ff);
+}
+
+.container .boite:nth-child(3):before{
+    background: linear-gradient (315deg, #ff0000, #ffc107);
+}  */
+
+.container .boite:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(155,155,155,0.4);
+    pointer-events: none;
+}
+
+.container .boite .contenu {
+    position: relative;
+    padding-top: 60px;
+
+}
+
+.container .boite .contenu h4 {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    color: rgba(255,255,255,0.2);
+    transition: 0.5s;
+}
+
+.container .boite:hover .contenu h4 {
+    top: -10px;
+}
+
+.container .boite .contenu h5 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(218,240,217,0.6);
+}
+
+.container .boite .contenu p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 2px 10px;
+}
+
+.container .boite .contenu a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .boite:hover .contenu a {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.container .boite .contenu a:hover {
+    color: #000;
+    background: #fff;
+}
+
+                                    /* footer */
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background: rgba(218,240,217,0.4);
+}
+
+.totop {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+                            /* media querry */
+
+@media screen and (max-width: 550px) {
+    .first .box {
+        width: 100%;
+        margin-left: 1%;
+        text-align: center;
+        margin-top: 1%;
+    }
+     .javascript {
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .firstOne {
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    .secondOne {
+        margin: 0;
+    }
+    .container {
+        margin-top: 8%;
+    }
+    .container .boite {
+        width: 100%;
+        margin-top: 2%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width:900px) {
+    .first .box {
+        width: 100%;
+        margin-left: 1%;
+        text-align: center;
+        margin-top: 1%;
+    }
+    .backgroundImage {
+        display: flex;
+    }
+    .box1 {
+        justify-content: space-evenly;
+        margin-top: 25%;
+    }
+    .container {
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+    .container .boite {
+        width: 100%;
+        margin-top: 2%;
+        text-align: center;
+    }
+}
+
+
+
+

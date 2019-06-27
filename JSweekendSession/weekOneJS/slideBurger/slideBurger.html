@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>slideBurger without JavaScript</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">
+    <style>
+    .mainBox {
+        width: 100%;
+        height: 100%;
+        background-image: url(asset/landscape.jpg);
+        background-position: center;
+        background-size: cover;
+       
+    }
+    nav {
+        width: 85%;
+        height: 6%;
+        background: black;
+        margin-left: 8%;
+    }
+    nav ul {
+        width: 85%;
+        height: 6%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        list-style: none; 
+        color: white;
+        padding: 7px 25px;
+    }
+    nav ul li a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .slideBox {
+        height: 60vh;
+        width: 30vw;
+        position: relative;
+        background: rgba(12,37,214,0.5);
+        left: -30%;
+        top: 0px;
+        transition: 5s;
+        z-index: 1;
+    }
+    #icon:checked + .slideBox {
+        left: 0px;
+        top: 0px;
+    }
+    .fa {
+        position: fixed;
+        top: 0;
+        right: 15px;
+        font-size: 40px;
+        color: orange;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="mainBox">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <img src="">
+        <label for="icon"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <input type="checkbox" id="icon">
+        <div class="slideBox"></div>
+    </div>    
+
+
+</body>
+</html>

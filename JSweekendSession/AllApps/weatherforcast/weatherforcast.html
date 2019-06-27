@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather forcast</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="weatherforcast.css">
+    </head>
+
+    <body>
+        
+<div class="main" id="main">
+    <div class="heading">
+        <h1><i class="fa fa-map-signs fa-2x" aria-hidden="true"></i>WEATHER SEARCHING APP </h1>
+    </div>
+<div class="search" ><input type="text" id="city"> <button onclick="btn()" class="btn">Search</button></div>
+
+<div class="flex" id="flex">
+    <div><h2>Temprature : <span class="temprature" id="flex1">  </span> °C </h2>  </div>
+   <div><h2>Humidity :  <span class="humidity" id="flex2"> </span> %</h2> </div>
+   <div> <h2>Description : <span class="description" id="flex3"> </span></h2> </div> 
+   <div><h2>Country : <span class="country" id="flex4"> </h2> </span></div>
+
+</div>
+
+</div>
+
+        <script src="weatherforcast.js"></script>
+    </body>
+</html>

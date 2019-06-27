@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation JavaScript</title>
+<style>
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+p {
+width: 500px;
+height: auto;
+font-weight: bold;
+font-size: 20px;
+position: relative;
+}
+.boxanimation {
+    animation: move 12s linear 1;
+}
+@keyframes move {
+0%{
+    left: 0px;
+}
+100%{
+    left: 80px;
+}
+}
+
+</style>
+
+</head>
+<body>
+    <div class="box" id="box">
+
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Suscipit possimus repellendus quisquam adipisci architecto non quis 
+            iure, sit excepturi tempore?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus 
+            laborum, culpa impedit similique possimus repellat reprehenderit 
+            dolorum praesentium. Qui tempora eum officiis, praesentium et 
+            assumenda molestiae ut alias, adipisci possimus harum ab! Repellendus 
+            molestiae quibusdam odit ducimus excepturi consequuntur. Quam ea 
+            impedit officiis eligendi ullam quis distinctio aspernatur reprehen
+            derit ab?
+        </p>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet 
+            quaerat amet, magni voluptatibus, quisquam dolorem cupiditate earum 
+            sunt eaque corporis non voluptas tempore ea nemo deserunt et vero? 
+            Nihil, non itaque, labore quas a quod natus rerum ad quisquam, 
+            praesentium assumenda magnam alias doloribus nisi aperiam vero 
+            maxime velit. Nulla.
+        </p>
+
+
+         <img src="asset/beauty-nature.jpg" alt="" id="pic" width="100%" height="400">
+    </div>
+    
+    <button onclick = "btn();">Click Me</button>
+ 
+
+
+<script src="animationjs.js"></script> 
+</body>
+</html>

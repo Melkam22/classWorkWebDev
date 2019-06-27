@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trial</title>
+<style>
+                                    /* container for the fetched github informations */
+
+.profile {
+    width: 78%;
+    height: 30%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    top: 27%;
+    left: 10%;
+   display: none; 
+}
+.box1,.box2,.box3,.box4 {
+    width: 48%;
+    height: 35%;
+    border: 1px solid black;
+    border-radius: 0px 25px 0px 25px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    padding-left: 2%;
+}
+</style>
+
+</head>
+<body >
+<div class="profile" id="profile">
+     <h1>Turn off the lights before you leave office</h1> 
+    <div class="box1"><h2>User Name: <span id="box1"></h2></span> </div>
+    <div class="box2"><h2>Repository: <span id="box2"></h2></span></div>
+    <div class="box3"><h2>Value: <span id="box3"></h2> </span></div>
+    <div class="box4"><h2>Url: <span id="box4"></h2></span> </div>
+</div>
+    <button id="btn" onclick="reminder();">Click</button>
+
+    <script src="trial.js"></script>
+</body>
+</html>

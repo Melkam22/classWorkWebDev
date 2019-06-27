@@ -1,0 +1,444 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(182, 119, 114, 0.5),rgba(113,200,45,.7));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10%; 
+}
+
+                                /* heading */
+
+.heading {
+    width: 40%;
+    height: 15%;
+    position: absolute;
+    text-align: center;
+    top: 2%;
+}
+
+                                /* search button */
+
+.search {
+    width: 20%;
+    height: 4%;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+.btn {
+    width: 63%;
+    height: 90%;
+}
+button {
+    width: 32%;
+    height: 30px;
+}
+
+
+
+
+                                /* the big left side container */
+.left {
+    width: 45%;
+    height: 70vh;
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.firstl {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logol1 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/courrierintlogo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logol1:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkl1 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkl1 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkl1 a:hover {
+    color: silver;
+}
+
+.secondl {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logol2 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/bbclogo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.logol2:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkl2 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkl2 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkl2 a:hover {
+    color: silver;
+}
+
+.thirdl {
+    width: 92%;
+    height: 15%;
+    
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logol3 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/reuterslogo.jpeg);
+    background-size: cover;
+    background-position: bottom;
+     
+}
+.logol3:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkl3 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkl3 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkl3 a:hover {
+    color: silver;
+}
+
+.fourthl {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logol4 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/tv5mondelogo.png);
+    background-size: cover;
+    background-position: center;
+}
+.logol4:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+
+.linkl4 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkl4 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkl4 a:hover {
+    color: silver;
+}
+
+.fifthl {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logol5 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/mediapartlogo.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.logol5:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkl5 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkl5 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkl5 a:hover {
+    color: silver;
+}
+
+                                    /* the big right side container */
+.right {
+    width: 45%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.firstr {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logor1 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/france24logo.png);
+    background-size: cover;
+    background-position: center;
+}
+.logor1:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkr1 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkr1 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkr1 a:hover {
+    color: silver;
+}
+
+.secondr {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logor2 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/cnnlogo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logor2:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkr2 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkr2 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkr2 a:hover {
+    color: silver;
+}
+
+.thirdr {
+    width: 92%;
+    height: 15%;
+    
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logor3 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/zeitlogo.png);
+    background-size: cover;
+    background-position: center;
+}
+.logor3:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkr3 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkr3 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkr3 a:hover {
+    color: silver;
+}
+
+.fourthr {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logor4 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/dwlogo.png);
+    background-size: cover;
+    background-position: center;
+}
+.logor4:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.linkr4 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkr4 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkr4 a:hover {
+    color: silver;
+}
+
+.fifthr {
+    width: 92%;
+    height: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logor5:hover {
+    transform: scale(1.1);
+    border-radius: 12px 25px 25px 12px;
+}
+.logor5 {
+    width: 40%;
+    height: 110%;
+    background-image: url(news-logos/aljeziralogo.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.linkr5 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(82, 19, 14,.4),rgba(13,120,45,.4));
+}
+.linkr5 a {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.linkr5 a:hover {
+    color: silver;
+}
+
+
+                                        /* media query small screen*/
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 15%;
+    }
+    h1 {
+        font-size: 100%;
+    }
+    .left {
+        width: 90%;
+        height: 70%;
+        
+        margin-left: -25%;
+        display: flex;
+        flex-direction: column; 
+    }
+     
+    .right {
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-left: -25%;
+         
+    }
+}
+
+
+
+
+
+
+
+

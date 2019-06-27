@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java-script Calculator</title>
+    <style>
+
+    form {
+        width: 250px;
+        height: 200px;
+        border: 1px solid black;
+        padding-left: 5px;
+        background: rgba(28,129,213,0.5);
+        margin-left: 150px;
+    }
+    #value1 {
+        margin-top: 10px;
+        height: 25px;
+    }
+    #value2 {
+        margin-top: 10px;
+        height: 25px;
+    }
+    #operator {
+        margin-top: 10px;
+        padding: 10px 0px;
+    }
+    button {
+        margin-top: 10px;
+        padding: 10px 4px;
+    }
+    #result {
+        width: 257px;
+        height: 20px;
+        background: rgba(155,234,245,0.5);
+        border-bottom: 1px solid blue;
+        margin-left: 150px;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+<body>
+    <h1>This is Basic Calculator with JS</h1>
+
+    <form>
+        Value1: <input type="text" id="value1"><br>
+        Value2: <input type="text" id="value2"><br>
+        operator: <select id="operator">
+                    <option value="add">Addition</option>
+                    <option value="div">Division</option>
+                    <option value="mul">Multiplication</option>
+                    <option value="sub">Subtraction</option>
+                 </select>
+            <button type="button" onclick="calc()">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+ 
+<script src="calculator.js"></script>
+</body>
+</html>
