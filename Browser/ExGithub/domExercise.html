@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+<style>
+
+h1 {
+    text-align: center;
+    background-color: rgba(12,45,89,.7);
+}
+    /* question one */
+#border {
+    width: 220px;
+    height: 220px;
+    margin-left: 10%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: vertical;
+    background-color: lightcyan;
+}
+#value1 {
+    margin-top: 5%;
+}
+#value2 {
+    margin-top: 5%;
+}
+#operator {
+    margin-top: 5%;
+}
+
+/* question two */
+
+/* question three */
+
+
+.jacket {
+    width: 220px;
+    height: 200px;
+    margin-left: 10%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: vertical;
+    background-color: lightcyan;
+}
+.questionthree {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+#radius {
+    margin-top: 5%;
+}
+#height {
+    margin-top: 5%;
+}
+
+/* question four */
+
+.jacket4 {
+    width: 220px;
+    height: 200px;
+    margin-left: 10%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: vertical;
+    background-color: lightcyan;
+}
+.questionFour {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 50px;
+}
+ 
+#sideHeight {
+    margin-top: 5%;
+}
+#sideWidth {
+    margin-top: 5%; 
+}
+
+
+/* questionFour-two */
+
+.question4-2 {
+    border: 1px solid black;
+    background-color: azure;
+}
+
+/* question five */
+
+.jacket5 {
+    width: 420px;
+    height: 120px;
+    border: 1px solid blue;
+    margin-left: 10%;
+    font-size: 22px;
+    padding: 5% 5%;
+}
+ 
+
+</style>
+
+</head>
+<body>
+    <h1>Question one, calculator</h1>
+
+    <div id="border">
+    <form>
+        value1 = <input type="text" id="value1"><!-- for the input -->
+        value2 = <input type="text" id="value2"><!-- for the input -->
+        operator = <select id="operator">
+            <option value="add">add</option>
+            <option value="div">divide</option>
+            <option value="mul">multiply</option>
+            <option value="sub">subtract</option>
+        </select>
+<button type="button" onclick="calc()">Calculate</button> <!-- click to calculate -->
+    </form>
+    </div>
+    <div id="result">The answer is: </div> <!-- where to put the result -->
+
+    <h1>Question two, description </h1>
+
+<button id="btn" onclick="fnc()">Apple</button>
+<button id="btn1" onclick="fnc1()">Banana</button>
+<button id="btn2" onclick="fnc2()">Strawberry</button>
+
+
+<h2>Dropdown list</h2>
+
+Double-click me = <select onclick="effect()" id="dropDown">
+    <option value="app" id="app">Apple</option>
+    <option value="ban" id="ban">Banana</option>
+    <option value="straw" id="straw">Strawberry</option>
+</select>
+
+
+
+<h1>Question three, volume calculation</h1>
+
+<div class="jacket"> 
+<form>
+    radius = <input type="text" id="radius">
+    height = <input type="text" id="height">
+</form>
+<button class="questionthree" type="button" onclick="rad()">calculate</button>
+</div>
+<div id="volResult">the volume in cm3 is:  </div>
+
+<h1>Question four, find area, height & width of a ...</h1>
+
+<div class="jacket4">
+    <form>
+        sideHeight = <input type="text" id="sideHeight">
+        sideWidth = <input type="text" id="sideWidth">
+    </form>
+    <button class="questionFour" type="button" onclick="areaCalc()">calculate</button>
+</div>
+<div id="areaResult">the area in cm2 is:  </div>
+
+<h1>Question four-two, reshaping the area based on given input</h1>
+
+<div class="question4-2">
+        sideX = <input type="number" id="sideX">
+        sideY = <input type="number" id="sideY">
+    <button class="btn4-2" type="button" onclick="btn4()">reshape-it</button>
+</div>
+
+<h1>Question five, bonus, highlight certain words</h1>
+
+<div id="jacket5">
+    
+        You get more time to focus on <strong>individual</strong> words.
+        When it comes to learning English, what if I told you that you can 
+        understand big ideas with just a little bit of text? <strong>devote</strong>
+        Just When a text is short,because learning a <strong>language</strong> does 
+        not mean need to limit your thinking. more time to <strong>learning</strong> 
+        how every single word is used and what <strong>importance</strong> it has 
+        in the piece.
+    
+</div>
+
+    <script src="domExercise.js"></script>
+</body>
+</html>

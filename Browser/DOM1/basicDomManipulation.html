@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Method two</title>
+
+    <style>
+
+    .one {
+        width: 90vw;
+        height: 65vh;
+        margin-left: 5%;
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid blue;
+        display: none; 
+    } 
+    div.two {
+        width: 40vw;
+        height: 25vh;
+        margin-left: 3%;
+        margin-top: 3%;
+        border: 1px solid black;
+        background-image: url(farm.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    div.three {
+        width: 40vw;
+        height: 25vh;
+        margin-left: 5%;
+        margin-top: 3%;
+        border: 1px solid black;
+        overflow: auto;
+    }
+    div.three p {
+        text-align: justify;
+        margin: 2% 3%;
+    }
+    div.four {
+        width: 25vw;
+        height: 25vh;
+        margin-left: 3%;
+        border: 1px solid black;
+        background-image: url(countryside.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    div.five {
+        width: 25vw;
+        height: 25vh;
+        margin-left: 5%;
+        border: 1px solid black;
+        overflow: auto;
+    }
+    div.five p {
+        text-align: justify;
+        margin: 2% 3%;
+    }
+    div.six {
+        width: 25vw;
+        height: 25vh;
+        margin-left: 5%;
+        border: 1px solid black;
+        background-image: url(forest.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+    #btn {
+        width: 200px;
+        height: 40px;
+        border: 1px solid silver;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    p, h1 {
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+
+        <h1>This is my DOM example</h1>
+
+<button id="btn" onclick="clc()">click-me</button>
+         
+<div id="one" class="one">
+    <div class="two"><p>a car through a farm</p></div>
+    <div class="three"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Recusandae, quibusdam, vel consequatur quia nemo rerum incidunt 
+        necessitatibus cumque ullam nisi perspiciatis eaque eveniet, minus aliquam 
+        labore voluptatibus dolor optio neque. Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Asperiores porro quae quia amet voluptate! 
+        Aut temporibus distinctio ducimus dignissimos illum totam voluptatum, 
+        veniam maxime, dolorem explicabo officia omnis beatae fugiat!</p>
+    </div>
+    <div class="four"><p>beautiful nature</p></div>
+    <div class="five"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Ullam ut nisi enim amet. Soluta esse natus hic sed libero laboriosam, 
+        ipsam repellendus, consequatur illo accusamus sequi officiis corrupti 
+        placeat repudiandae eos quidem perferendis voluptatibus nihil incidunt 
+        quas vitae provident tempore laudantium voluptas. Magnam placeat veritatis.
+     </p></div>
+    <div class="six"><p>six</p></div>
+    
+</div>
+ 
+    <script src="domone.js"></script>
+</body>
+</html>
