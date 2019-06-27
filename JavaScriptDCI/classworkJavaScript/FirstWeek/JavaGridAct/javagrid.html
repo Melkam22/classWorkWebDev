@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java-script-Grid</title>
+
+    <style>
+
+    button {
+    width: 12%;
+    height: 30px;
+    background: orange;
+    color: white;
+    margin-top: 2%; 
+    }
+
+    .box {
+        width: 50%;
+        height: 15%;
+        background: brown;
+        padding: 5px 8px;
+        position: relative;
+        border-radius: 22px 22px 22px 22px;
+        animation: slideOut linear 2s;
+        animation-play-state: paused;
+    }
+
+    .box {
+        animation: slideBack linear 10s;
+        animation-play-state: paused;
+    } 
+
+    @keyframes slideOut{
+        0% {
+            left: -600px;
+        }
+        100% {
+            left: 0;
+        }
+    }  
+
+   @keyframes slideBack{
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: 600px;
+        }
+    }   
+
+    </style>
+</head>
+<body>
+    <h1>Java-script-Grid</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum a 
+            atque fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Maiores sapiente dolorem qui debitis esse voluptatibus autem illo 
+            doloribus repellat ipsam?
+        </p>
+    </div>
+    <button id="btn" onclick="playAnim()" ondblclick="playAnim1()">
+        Click-On</button>
+    
+    <script src="javagrid.js"></script>
+</body>
+</html>
