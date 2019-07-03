@@ -6,6 +6,23 @@ function randomNumber(min, max){
 return Math.floor(Math.random()*(max-min +1))+min;
 }
 
+let submitBtn = document.querySelector("#btn");
+submitBtn.addEventListener("click", guessedNumber)
+
+function guessedNumber(){
+    let randomizedNumber = randomNumber(1,10);
+    let inputValue = Number(document.querySelector("input").value);
+    console.log(randomizedNumber);
+    console.log(inputValue);
+    let myIncrement=1;
+    let heading = document.querySelector("h1");
+    let paragraph = document.querySelector("p");
+    while (randomizedNumber !== inputValue && myIncrement < 3){
+        
+    }
+    
+}
+//guessedNumber();
 
 /* function randomNumberGame2(){
     let playersGuess = randomNumber;
