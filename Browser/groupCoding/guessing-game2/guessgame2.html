@@ -24,7 +24,6 @@
             align-items: center;
             justify-content: center;
         }
-
         h1 {
             font-size: 4em;
             margin: 0;
@@ -32,7 +31,6 @@
         p {
             font-size: 1.5em;
         }
-
         input {
             width: 40vw;
             height: 2.5vh;
@@ -49,6 +47,20 @@
             margin-left: 5px;
             border: none;
         }
+        #load {
+            width: 150px;
+            height: 2.7vh;
+            background: rgba(80,119,120,.4);
+            color: white;
+            border-radius: 5px;
+            margin-left: 5px;
+            border: none;
+            /* margin-top: 1%;
+            margin-left: 42%; */
+        }
+        .wrapper {
+            display: flex;
+        }
 
     </style>
 </head>
@@ -63,9 +75,9 @@
             <p>Guess any number between 1 & 10.</p>
         </div>
         <div class="wrapper">
-            <input type="number" placeholder="insert No. here"><button id="btn">click-here</button>
+            <input type="number" placeholder="insert No. here"><button id="btn">click-here</button> <button id="load">Refresh</button>
         </div>
-
+<!--  <button id="load">Refresh</button> -->
     </div>
 
     <script src="guessgame2.js"></script>
