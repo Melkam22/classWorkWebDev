@@ -12,10 +12,11 @@
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
+            background: lightgrey;
         }
 
         .container {
-            background: rgba(150, 210, 150, .4);
+            background: rgba(150, 210, 150, .6);
             width: 100vw;
             height: 60vh;
             display: flex;
@@ -37,6 +38,7 @@
             height: 2.5vh;
             border-radius: 5px;
             border: 1px solid lightgray;
+            padding-left: 20px;
         }
         #btn {
             width: 150px;
@@ -44,6 +46,7 @@
             background: rgba(80,119,120,.4);
             color: white;
             border-radius: 5px;
+            margin-left: 5px;
             border: none;
         }
 
@@ -60,10 +63,10 @@
             <p>Guess any number between 1 & 10.</p>
         </div>
         <div class="wrapper">
-            <input type="number"> <button id="btn" onclick="btn()">click-here</button>
+            <input type="number" placeholder="insert No. here"><button id="btn">click-here</button>
         </div>
-    </div>
 
+    </div>
 
     <script src="guessgame2.js"></script>
 </body>
