@@ -31,4 +31,10 @@ function guessedNumber(){
         paragraph.innerHTML=`The number is indeed ${randomizedNumber}, you got the number correctly after ${myIncrement} attempt${myIncrement==1? "": "s"}`;
     }  
 }
+
+//loader refresh
+document.querySelector("#load").addEventListener("click", loader);
+function loader(){
+window.location.reload();
+}
  
