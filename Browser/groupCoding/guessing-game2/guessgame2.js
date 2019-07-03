@@ -23,13 +23,17 @@ function guessedNumber(){
 
     if(randomizedNumber !== inputValue && myIncrement <3){
         heading.innerHTML="Wrong!!!";
-        paragraph.innerHTML=`Try again! You have ${3-myIncrement} attempt${myIncrement==1? "": "s"} left`;
+        paragraph.innerHTML=`Try again! You have ${3-myIncrement} attempt${3-myIncrement==1? "": "s"} left`;
          
     }
  else if (randomizedNumber === inputValue && myIncrement <=3){
         heading.innerHTML="Bravo!!!";
-        paragraph.innerHTML=`The number is indeed ${randomizedNumber}, you got the number correctly after ${myIncrement} attempt${myIncrement==1? "": "s"}`;
+        paragraph.innerHTML=`The number is indeed ${randomizedNumber}, you got the number correctly after ${3-myIncrement} attempt${myIncrement==1? "": "s"}`;
     }  
+    else {
+        heading.innerHTML="Sorry, you lost!";
+        paragraph.innerHTML="Refresh and play again!";
+    }
 }
 
 //loader refresh
