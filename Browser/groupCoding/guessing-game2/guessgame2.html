@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guessing game two</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background: rgba(150, 210, 150, .4);
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5em;
+        }
+
+        input {
+            width: 40vw;
+            height: 2.5vh;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+        #btn {
+            width: 150px;
+            height: 2.7vh;
+            background: rgba(80,119,120,.4);
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="one">
+            <h1>Guess Me!</h1>
+        </div>
+        <div class="two">
+            <p>Guess any number between 1 & 10.</p>
+        </div>
+        <div class="wrapper">
+            <input type="number"> <button id="btn" onclick="btn()">click-here</button>
+        </div>
+    </div>
+
+
+    <script src="guessgame2.js"></script>
+</body>
+
+</html>
