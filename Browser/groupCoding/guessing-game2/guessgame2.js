@@ -17,8 +17,12 @@ function guessedNumber(){
     let myIncrement=1;
     let heading = document.querySelector("h1");
     let paragraph = document.querySelector("p");
-    while (randomizedNumber !== inputValue && myIncrement < 3){
-        
+
+
+    while (randomizedNumber !== inputValue && myIncrement <=3){
+        heading.innerHTML="Wrong!!!";
+        paragraph.innerHTML=`Try again! You have ${3-myIncrement} attempts left`;
+        myIncrement++;
     }
     
 }
