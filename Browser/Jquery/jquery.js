@@ -34,4 +34,7 @@ $(document).ready(function() {
     })
 })
  
- 
+//toggle, show if it is not there, or disappear if it is there
+$("body").click(function(){
+    $("h1").toggle("display");
+})
