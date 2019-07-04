@@ -20,4 +20,18 @@ $("#clc").click(function(){
     })
 })       
 
+//click again to make the content disappear
+$(document).ready(function() {
+    $('#clc').click(function() {
+        $('.para').css("display", function(){
+            if($(".para").css ("display")=== "block"){
+                return "none";
+            }
+            else {
+                return "block"
+            }
+        });
+    })
+})
+ 
  
