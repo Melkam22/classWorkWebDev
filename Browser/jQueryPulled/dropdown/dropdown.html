@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown menu jsExercise</title>
+    <style>
+    ul{
+        width: 97%;
+        height: 8vh;
+        background: rgba(33,22,44,.5);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;  
+    }
+
+    li {
+         padding: -2px;
+         font-size: 22px;
+         list-style-type: none;/* to avoid bullet points */
+         font-family: sans-serif;
+    }
+    a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #drop {
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="books-list">Home</a></li>
+        <li id="liDrop"> <a href="movies-lis">News</a>
+        <ul id="drop">
+            <li><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="#">three</a></li>
+        </ul></li>
+        <li><a href="cars-list">Contact</a></li>
+        <li><a href="albums-list">About</a></li>
+        <li><a href="celebrities-list">About</a></li>
+      </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="dropdown.js"></script>
+</body>
+</html>
