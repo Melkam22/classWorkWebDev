@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todo list</title>
+    <style>
+     body {
+        margin: 0;
+        padding: 0;
+        background: rgba(71,81,173,.3);
+    }
+    .container {
+        width: 100vw;
+        height: 50vh;
+        background: rgba(19,29,99,.3);
+        display: flex;
+        border-radius: 35px;
+        /*justify-content: center; */
+    }
+    h1 {
+        text-align: center;
+    }
+     
+    input {
+        width: 55%;
+        height: 30px;
+        margin-top: 10%;
+        border: none;
+        margin-left: 15%;
+        font-size: 20px;
+    }
+    button {
+        width: 15%;
+        height: 30px;
+        margin-left: 4px;
+        margin-top: 10%;
+        border: none;
+    }
+     
+    </style>
+</head>
+<body>
+        <h1>to-do-list</h1>
+
+    <div class="container"> 
+        <input type="text" id="input" placeholder="things to do">
+        <button id="btn">Click</button>
+     
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="todolist.js"></script>
+</body>
+</html>
