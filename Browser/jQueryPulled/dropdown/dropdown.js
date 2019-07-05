@@ -1,10 +1,16 @@
 
-$(document).ready( function(){
-    $("ul").on("mouseenter mouseleave", function(event){
+  $(document).ready(function(){
+    $("#one").on("mouseenter mouseleave", function(event){
         if(event.type === "mouseenter"){
-            $("#liDrop").css("display", "flex");
+            $("#flex").css("display", "flex");
+            $("#flex").css("flex-direction", "column");
+             
+             
         }else if(event.type === "mouseleave"){
-            $("#liDrop").css("display", "none");
+            $("#flex").css("display", "none");
+            //$("#source").css("padding-top", "0px");
+
+             
         }
     })
 } )
