@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choose stuff</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: rgba(223,145,122,.7);
+        }
+    
+
+    .container {
+        width: 60vw;
+        height: 50vh;
+        display: flex;
+        background: rgba(2,5,15,.4);
+        margin-left: 20%;
+        margin-top: 8%;
+        justify-content: center;
+        align-items: center;
+    }
+    #refresh {
+        width: 150px;
+        height: 40px;
+        margin-right: 3px;
+    }
+    input {
+        width: 45%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+    }
+    #clc {
+        width: 150px;
+        height: 40px;
+        margin-left: 3px;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+        <h1>Choose number from 1 to 4 & make your dream come true.</h1>
+    <div class="container">
+        <button id="refresh">Refresh</button>
+        <input type="number" placeholder="insert number of your choice here">
+        <button id="clc">Click</button>
+    </div>
+    
+    <script src="choosestuff.js"></script>
+</body>
+</html>

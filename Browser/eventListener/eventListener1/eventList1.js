@@ -1,13 +1,8 @@
 
 let language = document.querySelector("#btn");
-//let myUl = document.querySelector("ul");
-//console.log(myUl);
-
-//let myList  = true;
+ 
 language.addEventListener("click", function(){
-    //myList= !myList;
-    //if(myList){
-        //console.log("hii");
+     
         let elem = document.createElement("ul");
         let li = document.createElement("li");
         let li1 = document.createElement("li");
@@ -23,10 +18,4 @@ language.addEventListener("click", function(){
     elem.appendChild(li3);
 document.body.appendChild(elem);
 
-        /* myUl.style.display="none";
-        language.innerText ="remove them all! "; */
-    /* } else {
-        myUl.style.display="block";
-        language.innerText ="remove them all! ";
-    } */
 })

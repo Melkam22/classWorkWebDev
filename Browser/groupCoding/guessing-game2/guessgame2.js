@@ -16,7 +16,7 @@ function guessedNumber(){
     myIncrement++;
     //console.log(myIncrement);
     let inputValue = Number(document.querySelector("input").value);
-    //console.log(randomizedNumber);
+    console.log(randomizedNumber);
     //console.log(inputValue);
     let heading = document.querySelector("h1");
     let paragraph = document.querySelector("p");

@@ -1,14 +1,14 @@
 
 $("h1").html("from the jquery");
 
-$(document).ready(function() {
-    $('#clc').click(function() {  
+$(document).ready(function(){
+    $('#clc').click(function(){  
         $('.para').html('This is my paragraph, fired from jquery.');
         $(".para").css("color", "red");
     })
 })
-//to style all together
 
+//to style all together
 $("#clc").click(function(){
     $(".para").css({
         "background-color" : "red",
@@ -21,7 +21,7 @@ $("#clc").click(function(){
 })       
 
 //click again to make the content disappear
-$(document).ready(function() {
+/* $(document).ready(function() {
     $('#clc').click(function() {
         $('.para').css("display", function(){
             if($(".para").css ("display")=== "block"){
@@ -32,9 +32,27 @@ $(document).ready(function() {
             }
         });
     })
-})
+}) */
  
 //toggle, show if it is not there, or disappear if it is there
-$("body").click(function(){
+/* $("body").click(function(){
     $("h1").toggle("display");
-})
+}) */
+
+//toggle, show if it is not there, or disappear if it is there
+$("body").click(function(){
+    $(".para").toggle("display");
+})//it was originally made for paragraph, but since it uses the same function click()
+//it is applied to the click effect too
+
+//to hide & show the text on click
+$(document).ready(function(){
+    $("#hide").click(function(){
+      $("p").hide();
+    });
+    $("#show").click(function(){
+      $("p").show();
+    });
+  });
+  
+   

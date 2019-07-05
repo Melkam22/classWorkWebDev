@@ -2,10 +2,9 @@
  
  
 
-/* function getRandomNumber( min, max){
-     let myRandom =   Math.floor(Math.random()*11);
+/* function getRandomNumber(min, max){
      min = Math.ceil(min);
-    max = Math.floor(max);
+     max = Math.floor(max);
     return Math.floor(Math.random()*(max-min +1)+min); 
 }
 getRandomNumber(); */
@@ -17,8 +16,8 @@ let randomNumber =  Math.floor(Math.random()*11);
 console.log(randomNumber);
 function randomNumberGenerator(){
     let guessedNumber = randomNumber;
-    let guessed=1;
-    guessed = Number(prompt("hi, please insert No. from 1 to 10"));
+    //let guessed=1;
+    let guessed = Number(prompt("hi, please insert No. from 1 to 10"));
     let myIncrement=1;
 
     while(guessed !== guessedNumber && myIncrement <3){
@@ -31,6 +30,5 @@ function randomNumberGenerator(){
     } else {
          alert("sorry, you have failed to get it right") 
     }
-   
 }
 randomNumberGenerator();
