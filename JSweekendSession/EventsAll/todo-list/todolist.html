@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>todo-list</title>
+    <style>
+    .container{
+        width: 40vw;
+        min-height: 70vh;
+        background: rgba(1,23,14,.8);
+        margin-left: 32%;
+        color: orange;
+        font-weight: bold;
+    }
+    .flex{
+        width: 90vw;
+        height: 30px;
+        display: flex;
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+    input{
+        width: 30%;
+        font-size: 19px;
+        color: blue;
+    }
+    #btn{
+        width: 10%;
+        font-weight: bold;
+    }
+    h1{
+        text-align: center;
+        color: tomato;
+        padding: 2%;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>these are my todos  <i class="fa fa-wrench" aria-hidden="true"></i>
+        </h1>
+        <div class="flex">
+            <input type="text" id="input" placeholder="insert your todos">
+            <button id="btn">Click</button>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
