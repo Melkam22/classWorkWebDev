@@ -23,7 +23,7 @@ let MyQuote=[
 
 let myButton = document.querySelector("#quote");
     myButton.addEventListener("click", function(){
-        //let myRandomQuote = generateNew;
+         
         let myContainer = document.querySelector(".container");
         myContainer.innerHTML= randomQuote(MyQuote);
     });
