@@ -1,6 +1,5 @@
 function randomQuote(myQuote){
     let generateNew = myQuote[Math.floor(Math.random()*myQuote.length)];
-    //console.log(generateNew);
     return generateNew;
   }
   
