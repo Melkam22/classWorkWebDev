@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popup box</title>
+    <style>
+        .screen{
+            width: 100vw;
+            height: 100vh;
+            background: rgba(3,5,8,.4);
+        }
+        .popup{
+            width: 50%;
+            height: 34vh;
+            background: rgba(65,05,19,.5);
+            margin-top: 10;
+            margin-left: 25%;
+            /* position: relative; */
+        }
+        .cancel{
+            position: absolute;
+            margin: 1% 95%;
+        }
+        .textbox{
+            width: 90%;
+            height: 60%;
+            margin-left: 5%;
+            padding-top: 3%;
+        }
+        p{
+            text-align: justify;
+        }
+        .linkwrapper{
+            width: 70%;
+            height: 15%;
+             
+            margin-left: 15%;
+            margin-top: 3%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .linkbtn1, .linkbtn2{
+            width: 210px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen"> 
+        <div class="popup">
+            <div class="cancel">X</div>
+            <div class="textbox">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Repellat commodi temporibus eius sapiente necessitatibus 
+                    quam recusandae. Et natus minus enim aliquid, nulla 
+                    distinctio quo ullam quod dicta tempora repellendus quas.
+                </p>
+            </div>
+
+            <div class="linkwrapper">
+                <button class="linkbtn1">go to link</button>
+                <button class="linkbtn2">further info</button>
+            </div>
+            </div>
+        </div>
+    <script src="popup.js"></script>
+</body>
+</html>

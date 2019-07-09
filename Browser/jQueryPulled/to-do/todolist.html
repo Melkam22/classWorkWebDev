@@ -13,11 +13,12 @@
         background: rgba(71,81,173,.3);
     }
     .container {
-        width: 100vw;
-        height: 50vh;
+        width: 40%;
+        min-height: 60vh;
         background: rgba(19,29,99,.3);
-        display: flex;
+        /* display: flex; */
         border-radius: 35px;
+        margin-left: 30%;
         /*justify-content: center; */
     }
     h1 {
@@ -26,18 +27,29 @@
      
     input {
         width: 55%;
-        height: 30px;
+        height: 29px;
         margin-top: 10%;
         border: none;
         margin-left: 15%;
         font-size: 20px;
+        padding-left: 10px;
     }
     button {
         width: 15%;
-        height: 30px;
+        height: 32px;
         margin-left: 4px;
         margin-top: 10%;
         border: none;
+    }
+    span{
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        background: red;
+        color: white;
+        float: right;
+        border-radius: 50%;
+        text-align: center;
     }
      
     </style>
@@ -48,7 +60,7 @@
     <div class="container"> 
         <input type="text" id="input" placeholder="things to do">
         <button id="btn">Click</button>
-     
+     <ul id="ul">my Ul to do-list</ul>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

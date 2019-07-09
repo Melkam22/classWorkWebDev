@@ -6,44 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dropdown nav-bar</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
     nav{
         width: 92vw;
         height: 7vh;
         margin-left: 2%;
+        text-align: center;
     }
     ul{
-        width: 92vw;
-        height: 7vh;
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: space-evenly;
+       /*  justify-content: space-evenly; */
         list-style: none;/* to avoid bullet points */ 
         background: rgba(222,111,12,.5); 
     }
     li{
         font-family: Helvetica;
         font-size: 19px;
+        line-height: 7vh;
         height: 100%;
         width: 100%;
-         
     }
     li:hover{
         background: rgba(22,11,12,.5);
-        /* align-items: center; *//* center vertically */
+        align-items: center;/* center vertically */
     }
     a{
         color: bisque;
         font-weight: bold;
         text-decoration: none; 
     }
+    #drop{
+        position: relative;
+        width: 100%;
+    }
     #dropped{
          display: flex;
          flex-direction: column;
-         width: 200px;
+         position: absolute;
+         width: 100%;
          height: 130px;
-         margin-top: 22px;
+          
          /* padding-top: 10px; */
          display: none;
     }
+   /*  #dropped li{
+        margin: 0;
+    } */
     </style>
 </head>
 <body>

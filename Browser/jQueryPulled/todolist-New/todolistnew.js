@@ -14,4 +14,4 @@ myButton.addEventListener("click", function(event){
     /* myUl.appendChild(myLi); */
 
     document.body.appendChild(myContainer);
-})//instead of body, my li's are printed in my container
+})//instead of body, my li's are printed in my container, color tomato

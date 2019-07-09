@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Double Events</title>
+    <style>
+    .container{
+        width: 90vw;
+        min-height: 30vh;
+        margin-left: 5%;
+        margin-top: 4%;
+        border: 1px solid black;
+        background: rgba(64,92,198,.5);
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .one, .two, .three, .four{
+        width: 280px;
+        height: 170px;
+        border: 1px dotted white;
+        margin-top: 1%;
+        background: rgba(11,5,89,.6);
+        border-radius: 20%;
+    }
+    p{
+        text-align: center;
+    }
+    #btn {
+        width: 140px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <button id="btn">Click</button>
+
+    <div class="container" id="container">
+        <div class="one"><p>one</p></div>
+        <div class="two"><p>two</p> </div>
+        <div class="three"><p>three</p></div>
+        <div class="four"><p>four</p></div>
+    </div>
+     
+    
+    <script src="doubleevent.js"></script>
+</body>
+</html>
