@@ -26,7 +26,7 @@ let myButton = document.querySelector("#quote");
         //let myRandomQuote = generateNew;
         let myContainer = document.querySelector(".container");
         myContainer.innerHTML= randomQuote(MyQuote);
-    })
+    });
 
  
 
