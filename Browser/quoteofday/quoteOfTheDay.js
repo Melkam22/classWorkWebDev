@@ -1,12 +1,14 @@
 
- 
-function randomQuote(quotes){
+ import {randomQuote} from "./mainQuotes.js"; 
+
+ //console.log("works");
+/* function randomQuote(quotes){
   let generateNew = quotes[Math.floor(Math.random()*quotes.length)];
   //console.log(generateNew);
   return generateNew;
-}
+} */
 
-let MyQuote=[
+let myQuote=[
     "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
     "Don't watch the clock; do what it does. Keep going.",
     "The secret of getting ahead is getting started.",
@@ -24,11 +26,16 @@ let MyQuote=[
 let myButton = document.querySelector("#quote");
     myButton.addEventListener("click", function(){
          
-        let myContainer = document.querySelector(".container");
-        myContainer.innerHTML= randomQuote(MyQuote);
+        /* let myContainer = document.querySelector(".container");
+        myContainer.innerHTML= randomQuote(myQuote);*/
+
+        randomQuote(myQuote);  
+
     });
 
- 
+  
+
+  
 
  
 
