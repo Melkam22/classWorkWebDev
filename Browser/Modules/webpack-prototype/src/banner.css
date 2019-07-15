@@ -1,0 +1,13 @@
+
+
+.banner {
+    position: fixed;
+    width: 12vw;
+    height: 3vh;
+     
+    background: rgba(123,32,70,.5);
+    color: white;
+    font-weight: bold;
+  
+    padding: 25px;
+  }
