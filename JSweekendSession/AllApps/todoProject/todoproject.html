@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todo-project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body{
+        background: rgba(9,1,23,.7);
+    }
+    .container{
+        width: 40vw;
+        min-height: 60vh;
+        background: rgba(9,1,23,.7);
+        margin-left: 30%;
+        box-shadow: 10px 5px 5px black;
+    }
+    .one{
+        width: 80%;
+        height: 30px;
+        margin-left: 10%;
+        padding-top: 5%;
+    }
+    input{
+        height: 30px;
+        width: 60%;
+        border: none;
+        border-radius: 10px;
+        font-size: 19px;
+        padding-left: 20px;
+        margin-left: 8%;
+    }
+    button{
+        height: 32px;
+        width: 20%;
+        border: none;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    h1{
+        text-align: center;
+        color: gray;
+    }
+    .content{
+        width: 65%;
+        min-height: 60vh;
+        background: rgba(199,61,243,.2);
+        margin-left: 17%;
+        border-radius: 14px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+    .search{
+        width: 60%;
+        height: 30px;
+        margin-left: 17%;
+        border: none;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .fa{
+        color: grey;
+        font-size: 35px;
+        margin-left: 45%;
+    }
+    #ul{
+        color: lightgray;
+        text-align: center;
+        font-size: 17px;
+    }
+    span{
+        width: 12px;
+        height: 12px;
+        background: rgba(112,134,59,.7);
+        border-radius: 45%;
+    }
+
+@media only screen and (max-width: 600px) {
+  .container{
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+  }
+  .fa{
+      color: blue;
+  }
+  button{
+      background: rgba(112,134,59,.7);
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1000px){
+    .container{
+      width: 70%;
+      height: 100%;
+      margin-left: 15%;
+  }
+  button{
+      background: rgba(212,214,159,.7);
+  }
+  .content{
+      background: rgba(19,11,123,.7);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="one">
+        <input type="text" id="input" placeholder="put your todo list">
+        <button id="btn">Click</button>
+        </div>
+        <h1>planning</h1>
+        <i class="fa fa-wrench" aria-hidden="true"></i>
+        
+
+        <div class="content">
+                <ul id="ul">These are my todo lists:</ul>
+        </div>
+        <input type="text" class="search" placeholder="search">
+
+    </div>
+    <script src="todoproject.js"></script>
+</body>
+</html>
