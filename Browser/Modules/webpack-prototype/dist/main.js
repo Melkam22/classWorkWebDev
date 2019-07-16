@@ -32,7 +32,7 @@ myButton.addEventListener("click", function(){
         console.log(data)
 
         myIcon.innerHTML = data.weather[0].description;
-        myTemperature.innerHTML += data.main.temp;
+        myTemperature.innerHTML += data.main.temp + " °C";
         myWind.innerHTML += data.wind.speed;
         myCountry.innerHTML += data.sys.country;
         myHumidity.innerHTML += data.main.humidity+"%";
