@@ -98,7 +98,7 @@ button{
 .extraBox{
   width: 60vw;
   min-height: 35px;
-  background: rgba(21,35,218,.5);
+  background: rgba(21,35,218,.4);
   margin-top: 2%;
   margin-left: 5%;
   margin-bottom: 3%;
@@ -109,6 +109,7 @@ button{
   padding-top: 10px;
   text-shadow: 2px 2px 1px black;
   box-shadow: 2px 2px 1px black;
+  border-radius: 50px 0px 50px 0px;
 }
 .span{
   position: absolute;
