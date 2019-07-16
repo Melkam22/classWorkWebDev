@@ -15,6 +15,7 @@ body{
 }
 
 .icon{
+  position: relative;
   margin-left: 2%;
   margin-top: 3%;
   width: 100px;
@@ -106,4 +107,9 @@ button{
   font-weight: bold;
   padding-top: 10px;
   text-shadow: 2px 2px 1px black;
+}
+.span{
+  position: absolute;
+  left: 14px;
+  z-index: 200;
 }
