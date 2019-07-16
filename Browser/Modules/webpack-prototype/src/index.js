@@ -1,5 +1,5 @@
 
-import createBanner from "./banner.js";
+/* import createBanner from "./banner.js";
 
 import WebpackImg from "./webpack-logo.png";
 
@@ -22,4 +22,4 @@ document.body.appendChild(
 );
 
 document.body.appendChild(createBanner());
-document.body.appendChild(createImage(WebpackImg));
+document.body.appendChild(createImage(WebpackImg)); */
