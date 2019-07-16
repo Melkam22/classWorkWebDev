@@ -57,6 +57,7 @@ button{
   margin-top: 2%;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  display: none;
 }
 .temperature{
   width: 250px;
