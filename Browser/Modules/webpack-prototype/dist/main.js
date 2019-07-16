@@ -18,8 +18,9 @@ let myTemperature = document.querySelector(".temperature");
 let myWind = document.querySelector(".wind");
 let myCountry = document.querySelector(".country");
 let myHumidity = document.querySelector(".humidity");
- 
+let myImg =document.querySelector("#img");
 let myButton = document.querySelector("#btn");
+
 myButton.addEventListener("click", function(){
     let myCity = document.querySelector("#cityName").value;
     let api = `http://api.openweathermap.org/data/2.5/weather?q=${myCity}&APPID=950a99d07777436d293fd763f07f0f90&units=metric`;
@@ -31,12 +32,12 @@ myButton.addEventListener("click", function(){
     .then(data=>{
         console.log(data)
 
-        myIcon.innerHTML = data.weather[0].description;
+        document.querySelector(".span").innerHTML = data.weather[0].description;
+        myImg.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
         myTemperature.innerHTML += data.main.temp + " °C";
         myWind.innerHTML += data.wind.speed;
         myCountry.innerHTML += data.sys.country;
         myHumidity.innerHTML += data.main.humidity+"%";
-        //myExtra.innerHTML = data. etc.;
     })
 })
 
