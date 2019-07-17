@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(./imgfolder/sunnysky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    width: 70vw;
+    min-height: 50vh;
+    background: linear-gradient(115deg,skyblue,silver, tomato, red, blue,orange);
+    margin-left: 13%;
+    margin-top: 7%;
+    border-radius: 0% 25% 0% 25%;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+}
+.date{
+    width: 55%;
+    height: 35px;
+    background: rgba(12,14,41,.3);
+    margin-left: 25%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black; 
+    margin-left: 1%;
+    margin-top: -2%;
+    border-radius: 50%;
+    position: relative;
+}
+.icon-span{
+    padding-left: 25px;
+    position: absolute;
+}
+.content{
+    width: 70%;
+    min-height: 30vh;
+    border: 1px solid black;
+    background: rgba(34,76,90,.5);
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+.humidity{
+    width: 230px;
+    height: 70px;
+    background: rgba(12,34,1,.5);
+}
+.wind-speed{
+    width: 230px;
+    height: 70px;
+    background: rgba(12,34,1,.5);
+}
+.temperature{
+    width: 230px;
+    height: 70px;
+    background: rgba(12,34,1,.5);
+}
+.country{
+    width: 230px;
+    height: 70px;
+    background: rgba(12,34,1,.5);
+}
+
+
+.wrapper{
+    width: 30%;
+    min-height: 30px;
+    margin-top: 1%;
+    margin-left: 30%;
+    display: flex;
+}
+.input{
+    width: 55%;
+    height: 32px;
+    border: none;
+    border-radius: 5%;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.button{
+    width: 70px;
+    height: 34px;
+    border: none;
+    background: rgba(145,241,110,.7);
+    border-radius: 10%;
+    margin-left: 1%;
+}
+.next-days{
+    width: 90%;
+    height: 14%;
+    margin-left: 5%;
+    background: rgba(34,91,6,.4);
+    margin-top: 2%;
+    border-radius: 0% 39% 0% 39%;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+.tomorrow{
+    width: 15%;
+    height: 40px;
+    background: rgba(145,241,110,.3);
+    margin-left: 16%;
+}
+.after-tomorrow{
+    width: 15%;
+    height: 40px;
+    background: rgba(145,241,110,.3);
+    margin-left: 4%;
+}
+.after1-tomorrow{
+    width: 15%;
+    height: 40px;
+    background: rgba(145,241,110,.3);
+    margin-left: 4%;
+}
+.after2-tomorrow{
+    width: 15%;
+    height: 40px;
+    background: rgba(145,241,110,.3);
+    margin-left: 4%;
+}
+/* @media only screen and (max-width: 600px) {
+    .next-days {
+      display: flex;
+      flex-direction: row;
+    }
+} */

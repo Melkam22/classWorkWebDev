@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Import-export</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background:rgba(112,67,98,.5);
+    }
+    h1{
+        text-align: center;
+    }
+    .date{
+        width: 40vw;
+        height: 35px;
+        border: 1px solid black;
+        margin-left: 30%;
+    }
+    .input-btn{
+        width: 50%;
+        height: 35px;
+        display: flex;
+        margin-top: 2%;
+        margin-left: 25%;
+    }
+    .input{
+        width: 75%;
+        height: 92%;
+    }
+    button{
+        width: 23%;
+        height: 100%;
+        margin-left: 2%;
+    }
+    .main{
+        width: 40vw;
+        min-height: 40vh;
+        margin-left: 30%;
+        background: rgba(11,23,148,.5);
+        margin-top: 2%;
+    }
+    .search{
+        width: 30vw;
+        height: 30px;
+        margin-left: 35%;
+        margin-top: 3%;
+    }
+    </style>
+</head>
+<body>
+    <h1>todo list with current date</h1>
+    <div class="date"> </div>
+
+    <article class="input-btn">
+        <input type="text" class="input" placeholder="put your search here">
+        <button class="button">Click</button>
+    </article>
+
+    <article class="main"></article>
+    <input type="text" class="search" placeholder="search here">
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

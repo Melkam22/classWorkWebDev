@@ -6,7 +6,8 @@ function randomQuote(myQuote){
 
     let myContainer = document.querySelector(".container");
         myContainer.innerHTML= generateNew/* randomQuote  /(MyQuote)*/;
-       return generateNew;
+       return generateNew;         
 }
+ 
 
 export {randomQuote};

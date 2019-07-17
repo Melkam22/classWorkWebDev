@@ -13,7 +13,7 @@ myInput.addEventListener("blur", function(event){
 },true);
 
 //fetching data
-let myDisplay = document.querySelector(".two");
+let myDisplay = document.querySelector(".two");//to make the content visible on browser
 let myIcon = document.querySelector(".icon");
 let myTemperature = document.querySelector(".temperature");
 let myWind = document.querySelector(".wind");
@@ -34,7 +34,7 @@ myButton.addEventListener("click", function(){
         console.log(data)
         myDisplay.style.display="block";//to make the content visible on browser
         myDisplay.style.display="flex";
-        document.querySelector(".span").innerHTML += data.weather[0].description;
+        document.querySelector(".span").innerHTML += data.weather[0].description;//weather description
         myImg.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;//for icons
         myTemperature.innerHTML += data.main.temp + " °C";
         myWind.innerHTML += data.wind.speed;
@@ -45,7 +45,7 @@ myButton.addEventListener("click", function(){
 
 let myExtra = document.querySelector(".extraBox");
     let myDate = new Date();
-myExtra.innerHTML= myDate.toString();
+myExtra.innerHTML= myDate.toString();//current date generator 
 
  
 
