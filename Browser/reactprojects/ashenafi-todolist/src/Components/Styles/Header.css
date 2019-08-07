@@ -6,3 +6,11 @@ body{
 h1{
     color: tomato;
 }
+form{
+    margin-top: 2%;
+    width: 30%;
+    margin-left: 35%;
+}
+button {
+    margin-top: 2%;
+}
