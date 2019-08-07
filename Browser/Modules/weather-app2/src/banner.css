@@ -27,24 +27,29 @@ body{
     padding-left: 10px;
     display: flex;
     align-items: center;
+    box-shadow: 2px 2px 2px black; 
 }
 .icon{
     width: 80px;
-    height: 80px;
-    border: 1px solid black; 
+    height: 75px;
+    background: rgba(12,14,41,.3);
     margin-left: 1%;
     margin-top: -2%;
     border-radius: 50%;
     position: relative;
+    padding-top: 12px;
+    color: black;
+    font-weight: bold;
 }
 .icon-span{
     padding-left: 25px;
+    margin-top: -100px;
     position: absolute;
-}
+    z-index: 100;
+} 
 .content{
     width: 70%;
     min-height: 30vh;
-    border: 1px solid black;
     background: rgba(34,76,90,.5);
     margin-left: 15%;
     display: flex;
@@ -53,21 +58,33 @@ body{
     padding-top: 1%;
 }
 .humidity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 230px;
     height: 70px;
     background: rgba(12,34,1,.5);
 }
 .wind-speed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 230px;
     height: 70px;
     background: rgba(12,34,1,.5);
 }
 .temperature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 230px;
     height: 70px;
     background: rgba(12,34,1,.5);
 }
 .country{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 230px;
     height: 70px;
     background: rgba(12,34,1,.5);
@@ -82,7 +99,7 @@ body{
     display: flex;
 }
 .input{
-    width: 55%;
+    min-width: 55%;
     height: 32px;
     border: none;
     border-radius: 5%;
@@ -99,43 +116,171 @@ body{
 }
 .next-days{
     width: 90%;
-    height: 14%;
+    min-height: 14%;
     margin-left: 5%;
     background: rgba(34,91,6,.4);
     margin-top: 2%;
-    border-radius: 0% 39% 0% 39%;
+    border-radius: 0% 45% 0% 45%;
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
     margin-bottom: 2%;
+    box-shadow: 2px 2px 2px black; 
 }
 .tomorrow{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding-top: 5px;
     width: 15%;
-    height: 40px;
+    height: 70px;
     background: rgba(145,241,110,.3);
     margin-left: 16%;
 }
+.temp{
+    width: 20px;
+    height: 20px;
+    margin-top: 15%;
+    margin-left: -50px;
+}
+.wind{
+    width: 45px;
+    height: 17px;
+    margin-top: 35%;
+    margin-left: -20px;
+}
 .after-tomorrow{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding-top: 10px;
     width: 15%;
-    height: 40px;
+    height: 70px;
     background: rgba(145,241,110,.3);
     margin-left: 4%;
+}
+.temp1{
+    width: 20px;
+    height: 20px;
+    margin-top: 12%;
+    margin-left: -50px;
+}
+.wind1{
+    width: 45px;
+    height: 17px;
+    margin-top: 35%;
+    margin-left: -20px;
 }
 .after1-tomorrow{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding-top: 10px;
     width: 15%;
-    height: 40px;
+    height: 70px;
     background: rgba(145,241,110,.3);
     margin-left: 4%;
+}
+.temp2{
+    width: 20px;
+    height: 20p;
+    margin-top: 12%;
+    margin-left: -50px;
+}
+.wind2{
+    width: 45px;
+    height: 17px;
+    margin-top: 35%;
+    margin-left: -20px;
 }
 .after2-tomorrow{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding-top: 10px;
     width: 15%;
-    height: 40px;
+    height: 70px;
     background: rgba(145,241,110,.3);
     margin-left: 4%;
 }
-/* @media only screen and (max-width: 600px) {
+.temp3{
+    width: 20px;
+    height: 20px;
+    margin-top: 12%;
+    margin-left: -50px;
+}
+.wind3{
+    width: 45px;
+    height: 17px;
+    margin-top: 35%;
+    margin-left: -20px;
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        border-radius: 0%;
+    }
     .next-days {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      width: 250px;
+      height: 450px;
+      margin-left: 20%;
+      border-radius: 0%;
     }
-} */
+    .tomorrow  {
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dotted white;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .after-tomorrow{
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dotted white;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .after1-tomorrow {
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dotted white;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .after2-tomorrow{
+        width: 100%;
+        height: 150px;
+        border-bottom: 3px dotted white;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .content{
+        width: 250px;
+        margin-left: 74px;
+    }
+    .humidity{
+        border-bottom: 4px dashed gold;
+    }
+    .wind-speed{
+        border-bottom: 4px dashed gold;
+    }
+    .temperature{
+        border-bottom: 4px dashed gold;
+    }
+    .date{
+        min-height: 60px;
+    }
+}

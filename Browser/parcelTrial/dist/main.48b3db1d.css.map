@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles/main.scss"],"names":[],"mappings":"AAGA;EACI,YAHE;;;AAKN;EACI;EACA;EACA","file":"main.48b3db1d.css","sourceRoot":"../src","sourcesContent":["\n$col: rgba(91,39,59,.5);\n\nbody{\n    background: $col;\n}\nimg{\n    width: 220px;\n    height: 220px;\n    margin-left: 30%;\n}"]}

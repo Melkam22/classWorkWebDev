@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Application</title>
-    <link rel="stylesheet" type="text/css" href="./src/banner.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./dist/banner.css"> -->
 </head>
 <body>
     <div class="main">
-        <article class="date">date</article>
-        <article class="icon"><span class="icon-span">icon</span></article>
+        <article class="date"></article>
+        <article class="icon"> <img id="freeIcons" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" ><span class="icon-span"></span></article>
         <article class="content">
-            <article class="humidity">Humidity</article>
-            <article class="wind-speed">Wind-speed</article>
-            <article class="temperature">Temperature</article>
-            <article class="country">Country</article>
+            <article class="humidity">Humidity :  </article>
+            <article class="wind-speed">Wind-speed : </article>
+            <article class="temperature">Temperature : </article>
+            <article class="country">Country : </article>
         </article>
 
         <article class="wrapper">
@@ -25,10 +25,23 @@
         </article>
 
         <article class="next-days">
-            <article class="tomorrow">tomorrow</article>
-            <article class="after-tomorrow">after-tomorrow</article>
-            <article class="after1-tomorrow">1-after-tomorrow</article>
-            <article class="after2-tomorrow">2after-tomorrow</article>
+
+            <article class="tomorrow">Tomorrow
+                <div class="temp">temp</div>
+                <div class="wind">wind :</div>
+            </article>
+            <article class="after-tomorrow">In 2-Days
+                    <div class="temp1">temp</div>
+                    <div class="wind1">wind :</div>
+            </article>
+            <article class="after1-tomorrow">In 3-Days
+                    <div class="temp2">temp</div>
+                    <div class="wind2">wind :</div>
+            </article>
+            <article class="after2-tomorrow">In 4-Days
+                    <div class="temp3">temp</div>
+                    <div class="wind3">wind :</div>
+            </article>
         </article>
     </div>
     <script type="module" src="./src/index.js"></script>
