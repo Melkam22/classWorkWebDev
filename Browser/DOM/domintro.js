@@ -10,7 +10,7 @@ one.style.fontSize = "25px";
 one.style.border = "2px solid blue";
 one.style.textAlign = "center";
 
-console.dir(document);
+//console.dir(document);
 
 //the second text
 let second = document.querySelector("#two");
@@ -89,11 +89,12 @@ var form = document.querySelector('form');
 var fname = document.getElementById('fname');
 var lname = document.getElementById('lname');
 var submit = document.getElementById('submit');
-var para = document.querySelector('p');
+//var para = document.querySelector('p');
+let myResult = document.querySelector("#result");
 
 form.onsubmit = function(e) {
   if (fname.value === '' || lname.value === '') {
     e.preventDefault();
-    para.textContent = 'You need to fill in both names!';
+    myResult.textContent = 'You need to fill in both names!';
   }
 }
