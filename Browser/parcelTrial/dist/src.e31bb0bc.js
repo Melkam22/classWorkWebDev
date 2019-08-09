@@ -134,7 +134,8 @@ var myWind = document.querySelector(".two");
 var myTemp = document.querySelector(".three");
 var myCountry = document.querySelector(".four");
 var myIcon = document.querySelector(".icon");
-var myIconSpan = document.querySelector(".icon-span"); //let myBody = document.querySelector("body");
+var myIconSpan = document.querySelector(".icon-span");
+var myBody = document.querySelector("body"); //let myBody = document.querySelector("body");
 
 var myInput = document.querySelector(".btn");
 myInput.addEventListener("click", function () {
@@ -150,12 +151,23 @@ myInput.addEventListener("click", function () {
     myTemp.innerHTML += Math.floor(data.main.temp) + "°c";
     myCountry.innerHTML += data.sys.country;
     myIconSpan.innerHTML = data.weather[0].description;
-  }); //how to change the background image ??
 
-  if (myIconSpan.innerHTML === "clear sky") {
-    myIcon.style.innerHTML = style.backgroundColor = "blue";
-    /* .style.backgroundImage = "url('../images/wind.jpg')"; */
-  }
+    if (data.weather[0].description === "clear sky") {
+      myBody.style.backgroundImage = "url('/sunflower.826a5b6c.jpeg')";
+    } else if (data.weather[0].description === "shower rain" || data.weather[0].description === "light rain" || data.weather[0].description === "moderate rain") {
+      myBody.style.backgroundImage = "url('/rain.jpeg')"; //console.log(myIconSpan)
+    } else if (data.weather[0].description === "drizzle") {
+      myBody.style.backgroundImage = "url('/drizzle.jpeg')";
+    } else if (data.weather[0].description === "few clouds") {
+      myBody.style.backgroundImage = "url('/cloudyday.jpg')";
+    } else if (data.weather[0].description === "scattered clouds" || data.weather[0].description === "broken clouds" || data.weather[0].description === "overcast clouds") {
+      myBody.style.backgroundImage = "url('/scateredclouds.jpeg')";
+    } else if (data.weather[0].description === "mist" || data.weather[0].description === "fog") {
+      myBody.style.backgroundImage = "url('/fog.jpg')";
+    } else if (data.weather[0].description === "thunderstorm" || data.weather[0].description === "light thunderstorm" || data.weather[0].description === "heavy thunderstorm") {
+      myBody.style.backgroundImage = "url('/thunderstorm.png')";
+    }
+  });
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -185,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41955" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44983" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

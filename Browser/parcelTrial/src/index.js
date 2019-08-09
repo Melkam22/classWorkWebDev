@@ -16,6 +16,7 @@ let myTemp = document.querySelector(".three");
 let myCountry = document.querySelector(".four");
 let myIcon = document.querySelector(".icon");
 let myIconSpan = document.querySelector(".icon-span");
+let myBody = document.querySelector("body");
 
 //let myBody = document.querySelector("body");
 
@@ -29,19 +30,43 @@ fetch(myFullApi)
         return response.json();
 })
 .then(data=>{
-    console.log(data);
+    console.log(data)
 
     myHumidity.innerHTML += data.main.humidity + "%";
     myWind.innerHTML += data.wind.speed + "kmh";
     myTemp.innerHTML += Math.floor(data.main.temp) + "°c";
     myCountry.innerHTML += data.sys.country;
     myIconSpan.innerHTML = data.weather[0].description;
-})
+ 
 
-//how to change the background image ??
-if(myIconSpan.innerHTML === "clear sky"){
-myIcon.style.innerHTML = style.backgroundColor= "blue";    
-    /* .style.backgroundImage = "url('../images/wind.jpg')"; */
+if(data.weather[0].description === "clear sky"){
+    myBody.style.backgroundImage = "url('/sunflower.826a5b6c.jpeg')"; 
 }
-
+else if(data.weather[0].description === "shower rain" ||
+data.weather[0].description === "light rain" ||
+data.weather[0].description === "moderate rain"){
+myBody.style.backgroundImage = "url('/rain.jpeg')";
+    //console.log(myIconSpan)
+}
+else if(data.weather[0].description === "drizzle"){
+myBody.style.backgroundImage = "url('/drizzle.jpeg')"; 
+}
+else if(data.weather[0].description === "few clouds"){
+myBody.style.backgroundImage = "url('/cloudyday.jpg')";
+}
+else if(data.weather[0].description === "scattered clouds" ||
+        data.weather[0].description === "broken clouds" ||
+        data.weather[0].description === "overcast clouds"){
+    myBody.style.backgroundImage = "url('/scateredclouds.jpeg')";   
+}
+else if(data.weather[0].description === "mist" ||
+data.weather[0].description === "fog"){
+    myBody.style.backgroundImage = "url('/fog.jpg')";
+}
+else if(data.weather[0].description === "thunderstorm" || 
+data.weather[0].description === "light thunderstorm" ||
+data.weather[0].description === "heavy thunderstorm"){
+    myBody.style.backgroundImage = "url('/thunderstorm.png')";
+}
+}) 
 })
