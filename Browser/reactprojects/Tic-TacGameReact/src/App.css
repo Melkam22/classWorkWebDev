@@ -1,0 +1,50 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background: rgba(123,154,219,.5);
+}
+
+h1,h2{
+  color: green;
+  text-align: center;
+}
+
+#container{
+  width: 30vw;
+  min-height: 50vh;
+  margin-left: 32%;
+  background: rgba(09,89,99,.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  border-radius: 10%;
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine{
+width: 100px;
+height: 100px;
+background: rgba(29,29,199,.5);
+border-radius: 50%;
+position: relative;
+}
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover{
+   background: rgba(23,54,19,.5);
+  }
+
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine{
+    position: absolute;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 30%;
+    font-weight: bold;
+    font-size: 40px;
+  }/* changed from span to all class names */
+  .img{
+    margin-left: 42%;
+  }
+  .result{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 10%;
+  }
