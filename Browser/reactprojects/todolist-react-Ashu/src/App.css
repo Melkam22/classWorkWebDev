@@ -1,0 +1,36 @@
+h1, p{
+  text-align: center;
+}
+.logo{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: skyblue;
+}
+.input{
+  margin-left: 40%;
+  width: 200px;
+}
+img{
+  margin-left: 40%;
+  width: 200px;
+  height: 140px;
+}
+ 
+.projection-field{
+  background: rgba(183,191,104,.5);
+  width: 40%;
+  min-height: 0px;
+  margin-left: 32%;
+  margin-top: 1%;
+}
+.btn{
+  background: orangered;
+  border: none;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.li{/* text inside the input box */
+  list-style: none;
+}
