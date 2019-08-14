@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Photo from './photo.jpg';
 import './App.css';
 import Main from './components/main.jsx';
@@ -21,23 +21,23 @@ class App extends Component {
     [2, 4, 6],
   ];
  */
-  render(){
-  return (
-    <>
-      <h1>This is Tic-Tac-Toe with React-jsx</h1> 
-      <img src={Photo} alt="Photo" className="photo" />
+  render() {
+    return (
+      <>
+        <h1>This is Tic-Tac-Toe with React-jsx</h1>
+        <img src={Photo} alt="Photo" className="photo" />
 
-    <Main />
-      {/* <Main 
-        banana={this.winningLines} 
-        age="12"
-        name="Lol"
+        <Main />
+        {/* <Main 
+        winner={this.winningLines} 
+        age="22",
+        name="Ashu",
         calcAge={()=>{console.log("hi")}}
       />
       <Example age={12}/> */}
-    </>
-  );
-}
+      </>
+    );
+  }
 }
 
 export default App;
