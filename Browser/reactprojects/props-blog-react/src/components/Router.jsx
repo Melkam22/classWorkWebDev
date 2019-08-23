@@ -8,7 +8,16 @@ import User from './User';
 
 class RouterNav extends Component {
     state = {
-        jacket: []
+        jacket: [],
+        time: ''
+    }
+    myDate = () => {
+        let myDate1 = new Date()
+        this.setState({
+            time: myDate1.toLocaleDateString()
+
+        })
+        console.log(myDate1);
     }
 
     /* updated variables */
@@ -20,7 +29,9 @@ class RouterNav extends Component {
         myJacket.push(post)
         this.setState({
             jacket: myJacket,
+            time: ''
         })
+        this.myDate();
     }
 
     render() {
@@ -36,7 +47,7 @@ class RouterNav extends Component {
                     <Switch>
                         <Route exact path="/" component={Welcomepage} />
                         <Route exact path="/createpost" render={() => <CreatePost onLog={this.onLog} />} />
-                        <Route exact path="/user" render={() => <User array={this.state.jacket} />} />{/* to props it on User.jsx */}
+                        <Route exact path="/user" render={() => <User array={this.state.jacket} time={this.state.time} />} />{/* to props it on User.jsx */}
                     </Switch>
                 </main>
             </Router>

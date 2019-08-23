@@ -66,22 +66,25 @@ textarea{
 /* last page */
 .styleUser{
     width: 50%;
-    height: 170px;
+    min-height: 170px;
     display: flex;
     flex-direction: column;
     background: rgba(138,184,183,.5);
     justify-content: space-evenly;
     align-items: center;
-    margin: 10% auto;
-    box-sizing: border-box;
-    overflow: hidden;
+    margin: 10% auto; 
+     
 }
 .userStyle{
+    min-height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgba(18,14,83,.5);
     border-bottom: 1px solid white;
-    padding: 10px 20px;
+    padding: 50px 0;
+}
+.time3{
+    display: flex;
 }

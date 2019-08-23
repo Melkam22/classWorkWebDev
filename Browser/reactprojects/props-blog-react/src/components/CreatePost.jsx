@@ -8,6 +8,7 @@ class CreatePost extends Component {
         lastName: '',
         content: ''
     }
+
     handleName = (e) => {
         this.setState({
             firstName: e.target.value
@@ -23,22 +24,7 @@ class CreatePost extends Component {
             content: e.target.value
         })
     }
-    /* updated variables */
-    /* onLog = (e) => {
-        e.preventDefault();
-        console.log('all', this.state);//we ll on cons. get inserted values from all 
-        let myJacket = this.state.jacket;
-        myJacket.push(this.state.firstName)
-        myJacket.push(this.state.lastName)
-        myJacket.push(this.state.content)
-        this.setState({
-            jacket: myJacket,
-            firstName: "",
-            lastName: "",
-            content: ""
-        })
-        //console.log('myName', myJacket)//we ll get myName & the inserted input
-    } */
+
     render() {
         let style = {
             color: ""
@@ -56,9 +42,6 @@ class CreatePost extends Component {
                     <button className="submit" onClick={() => this.props.onLog(this.state.firstName, this.state.lastName, this.state.content)}>Submit</button>
                 </div>
                 <User
-                /* firstName={this.state.firstName}//to export content to User.jsx
-                lastName={this.state.lastName}
-                content={this.state.content} */
                 />
             </div>
         )
