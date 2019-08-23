@@ -17,7 +17,7 @@ class RenderPage extends Component {
                                             <p>{item.lastName}</p>
                                             <p>{item.email}</p>
                                             <p>{item.passWord}</p>
-
+                                            <p>{item.content}</p>
                                         </h2>
                                     )
                                 })}

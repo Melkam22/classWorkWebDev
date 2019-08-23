@@ -21,13 +21,19 @@ li{
 /* home-page */
 .home{
   width: 50%;
-  height: 200px;
+  min-height: 200px;
   background: rgba(149,157,90,.5);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 25%;
   margin-top: 5%;
+}
+.homePage{
+  font-size: 27px;
+  color: blue;
+  font-weight: bold;
 }
 /* insertinfo page */
 .form{

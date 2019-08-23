@@ -7,8 +7,8 @@ class InsertInfo extends Component {
         firstName: '',
         lastName: '',
         email: '',
-        passWord: ''
-        /* content: '' */
+        passWord: '',
+        content: ''
     }
 
     changeName = (e) => {
@@ -31,11 +31,11 @@ class InsertInfo extends Component {
             changepassWord: e.target.value
         })
     }
-    /* changecontent = (e) => {
+    changecontent = (e) => {
         this.setState({
             content: e.target.value
         })
-    } */
+    }
 
     render() {
         return (
@@ -50,15 +50,15 @@ class InsertInfo extends Component {
                         onChange={this.changeemail} /></label>
                     <label>Pass Word<input type="text"
                         onChange={this.changepassWord} /> </label>
-                    {/*  <label>Conetent : <textarea>
-                    onChange={this.changecontent}</textarea> </label> */}
+                    <label>Conetent : <textarea
+                        onChange={this.changecontent} /> </label>
 
                     <button className="btn" onClick={() => this.props.secondFunction(
                         this.state.firstName,
                         this.state.lastName,
                         this.state.email,
                         this.state.passWord,
-                        /* this.state.content */
+                        this.state.content
                     )}> Submit </button>
                 </main>
                 <RenderPage />
