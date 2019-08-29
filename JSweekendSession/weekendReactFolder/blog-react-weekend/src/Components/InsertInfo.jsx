@@ -53,15 +53,18 @@ class InsertInfo extends Component {
                     <label>Conetent : <textarea
                         onChange={this.changecontent} /> </label>
 
-                    <button className="btn" onClick={() => this.props.secondFunction(
-                        this.state.firstName,
-                        this.state.lastName,
-                        this.state.email,
-                        this.state.passWord,
-                        this.state.content
-                    )}> Submit </button>
+                    <button className="btn"
+                        onClick={() => this.props.secondFunction(
+                            this.state.firstName,
+                            this.state.lastName,
+                            this.state.email,
+                            this.state.passWord,
+                            this.state.content,
+
+                            <RenderPage />
+                        )}> Submit </button>
                 </main>
-                <RenderPage />
+
             </div>
         )
     }

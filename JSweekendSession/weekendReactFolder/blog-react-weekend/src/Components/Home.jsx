@@ -25,7 +25,8 @@ class Home extends Component {
                 <h1 className="home">Welcome to my Home page!
                     <h2>Today is :
                         <div className="homePage" onClick={this.myCalc}>
-                            {this.state.myDate.toString().slice(0, 24)}</div>
+                            {this.state.myDate.toString().slice(0, 24)}
+                        </div>
                     </h2>
                 </h1>
 

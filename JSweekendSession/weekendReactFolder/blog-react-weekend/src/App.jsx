@@ -18,7 +18,7 @@ class App extends Component {
     this.setState({
       emptyArray: myEmptyArray
     })
-    console.log('array', myEmptyArray);
+    //console.log('array', myEmptyArray);
   }
 
 
