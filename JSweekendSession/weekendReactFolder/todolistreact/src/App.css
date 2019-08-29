@@ -1,0 +1,26 @@
+.App{
+  width: 25%;
+  height: 15%;
+  margin-left: 40%;
+  background: white;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 6px black;
+}
+.btn{
+  margin-top: 2%;
+  margin-left: 35%;
+  margin-bottom: 2%;
+}
+.input{
+  border: none;
+  border-bottom: 2px solid black;
+  background:  white;
+}
+.bulletPoint{
+  list-style: none;
+  
+}
