@@ -1,74 +1,85 @@
 import React, { Component } from 'react';
 import RenderPage from './RenderPage';
 
-
 class InsertInfo extends Component {
     state = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        passWord: '',
-        content: ''
+        name: null,
+        lastName: null,
+        email: null,
+        address: null,
+        comment: null
     }
-
-    changeName = (e) => {
+    handleName = (e) => {
         this.setState({
-            firstName: e.target.value
+            name: e.target.value,
         })
     }
-    changelastName = (e) => {
+    handleLastName = (e) => {
         this.setState({
             lastName: e.target.value
         })
     }
-    changeemail = (e) => {
+    handleEmail = (e) => {
         this.setState({
             email: e.target.value
         })
     }
-    changepassWord = (e) => {
+    handleAddress = (e) => {
         this.setState({
-            changepassWord: e.target.value
+            address: e.target.value
         })
     }
-    changecontent = (e) => {
+    handleComment = (e) => {
         this.setState({
-            content: e.target.value
+            comment: e.target.value
         })
     }
 
     render() {
+
         return (
             <div>
-                <h1>Insert-Info Page</h1>
-                <main className="form">
-                    <label>First Name <input type="text"
-                        onChange={this.changeName} /></label>
-                    <label>Last Name<input type="text"
-                        onChange={this.changelastName} /> </label>
-                    <label>Email Address <input type="text"
-                        onChange={this.changeemail} /></label>
-                    <label>Pass Word<input type="text"
-                        onChange={this.changepassWord} /> </label>
-                    <label>Conetent : <textarea
-                        onChange={this.changecontent} /> </label>
+                <h1>from InsertInfo</h1>
 
-                    <button className="btn"
-                        onClick={() => this.props.secondFunction(
-                            this.state.firstName,
-                            this.state.lastName,
-                            this.state.email,
-                            this.state.passWord,
-                            this.state.content,
+                <main className="main">
+                    <label>First Name: <input type="text"
+                        value={this.state.name}
+                        onChange={this.handleName} />
+                    </label>
+                    <label>Last Name: <input type="text"
+                        value={this.state.lastName}
+                        onChange={this.handleLastName} />
+                    </label>
+                    <label>Email: <input type="text"
+                        value={this.state.email}
+                        onChange={this.handleEmail} />
+                    </label>
+                    <label>Physical Address: <input type="text"
+                        value={this.state.address}
+                        onChange={this.handleAddress} />
+                    </label>
+                    <label>Comment:
+                        <textarea
+                            value={this.state.comment}
+                            onChange={this.handleComment}>
+                        </textarea></label>
 
-                            <RenderPage />
-                        )}> Submit </button>
+                    <button onClick={() => this.props.firstOp(
+                        this.state.name,
+                        this.state.lastName,
+                        this.state.email,
+                        this.state.address,
+                        this.state.comment,
+                        this.setState({
+                            name: '', lastName: '', email: '', address: '', comment: ''
+                        }),
+                        < RenderPage />
+                    )}>Submit</button>
                 </main>
-
             </div>
+
         )
     }
 }
 
-export default InsertInfo
-
+export default InsertInfo;

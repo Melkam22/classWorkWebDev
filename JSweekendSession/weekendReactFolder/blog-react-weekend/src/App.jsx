@@ -8,19 +8,17 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
   state = {
-    emptyArray: []
+    container: []
   }
 
-  myFunc = (a, b, c, d, e) => {
-    let allElements = { firstName: a, lastName: b, email: c, passWord: d, content: e }
-    let myEmptyArray = this.state.emptyArray;
-    myEmptyArray.push(allElements);
+  firstOp = (a, b, c, d, e) => {
+    let myContents = { name: a, lastName: b, email: c, address: d, comment: e };
+    let myContainer = this.state.container;
+    myContainer.push(myContents);
     this.setState({
-      emptyArray: myEmptyArray
+      container: myContainer
     })
-    //console.log('array', myEmptyArray);
   }
-
 
   render() {
     return (
@@ -34,10 +32,10 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/insert-info"
-              render={() => <InsertInfo secondFunction={this.myFunc} />} />
+              render={() => <InsertInfo firstOp={this.firstOp} />} />
+
             <Route exact path="/render-page"
-              render={() => <RenderPage
-                exportContent={this.state.emptyArray} />} />
+              render={() => <RenderPage secondOp={this.state.container} />} />
           </Switch>
         </main>
       </Router>
