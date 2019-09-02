@@ -36,13 +36,23 @@ class CreatePost extends Component {
         return (
             <div>
                 <div className="form" style={style}>
-                    <label>First Name <input type="text" onChange={this.handleName} value={this.state.firstName} /></label>
-                    <label>Last Name <input type="text" onChange={this.handleLastName} value={this.state.lastName} /></label>
-                    <label>Content <textarea onChange={this.handleContent} value={this.state.content}></textarea></label>
-                    <button className="submit" onClick={() => this.props.onLog(this.state.firstName, this.state.lastName, this.state.content)}>Submit</button>
+                    <label>First Name <input type="text"
+                        onChange={this.handleName} value={this.state.firstName} />
+                    </label>
+                    <label>Last Name <input type="text"
+                        onChange={this.handleLastName} value={this.state.lastName} />
+                    </label>
+                    <label>Content <textarea
+                        onChange={this.handleContent} value={this.state.content}>
+                    </textarea></label>
+                    <button className="submit"
+                        onClick={() => this.props.onLog(this.state.firstName,
+                            this.state.lastName, this.state.content,
+
+                            <User />
+                        )}>Submit</button>
                 </div>
-                <User
-                />
+
             </div>
         )
     }
