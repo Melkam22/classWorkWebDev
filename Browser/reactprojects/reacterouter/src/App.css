@@ -1,0 +1,87 @@
+body{
+  background: rgba(213,175,223,.5);
+}
+
+nav{
+  width: 100%;
+  height: 8%;
+  background: rgba(23,75,123,.5);
+  display: flex;
+  justify-content: space-evenly;
+}
+li{
+  height: 100%;
+  list-style: none;
+}
+.decoration{
+  text-decoration: none;
+  line-height: 35px;
+  font-weight: bold;
+  color: beige;
+}
+.decoration:hover{
+  color: black;
+}
+h1, h2, h4{
+  text-align: center;
+}
+p{
+  text-align: justify;
+  margin: 0 8px 0 8px;
+}
+/* photo-styling on Lifecycle.jsx*/
+.forest{
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  margin: 0 0 20px 20px;
+}
+/* photo-styling on home.jsx*/
+.flex{
+  width: 96%;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.countryside, .photo, .image-two{
+  height: 300px;
+  width: 350px;
+  margin: 0 0 20px 0;
+}
+/* styling services.jsx */
+.service{
+  line-height: 40px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+/* styling Askedquestions.jsx */
+.askedquiz{
+  line-height: 40px;
+  margin-left: 25px;
+}
+/* Lifecycle */
+.date{
+  width: 196px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% auto;
+  background: rgba(23,75,2,.5);
+  color: white;
+  font-weight: bold;
+  border-radius: 50% 0 45% 0;
+}
+.headingBorder{
+  border: 1px solid black;
+  width: 40%;
+  min-height: 100px;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
