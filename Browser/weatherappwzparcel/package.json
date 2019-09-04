@@ -1,0 +1,23 @@
+{
+  "name": "parcelTrial",
+  "version": "1.0.0",
+  "homepage": ".",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d build",
+    "prod": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.7"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
