@@ -1,0 +1,21 @@
+.heading{
+  width: 20vw;
+  min-height: 120px;
+  background: rgba(36,71,98, .5);
+  margin-left: 20%
+}
+/* home page */
+.card-img-top, .card-body{
+  width: 70%;
+  height: 240px;
+  margin-left: 15%;
+}
+/* register page */
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25%;
+}
+/* video page */
+ 
