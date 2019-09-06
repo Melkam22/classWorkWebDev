@@ -1,38 +1,36 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { isTemplateElement } from '@babel/types';
+import { connect } from 'react-redux';
 
 class MyPosts extends Component {
-    state = {
-        post: []
-    }
-
-    componentDidMount() {//to get what we put after our home address
-        let myId = this.props.match.params.mypost_id;
-        axios.get('https://jsonplaceholder.typicode.com/posts/' + myId)
-            .then(response => {
-                this.setState({//route parameter
-                    post: response.data
-                })
-            })
-    }
 
     render() {
-        const post = this.state.post ? (
-            <div className="post orange-text">
-                <h3 className="center">{this.state.post.title}</h3>
-                <p>{this.state.post.body}</p>
-            </div>
-        ) : (
-                <div className="center">There is none!</div>
-            );
+        console.log(this.props);//matching element from our obj. & given on console
+        const post = this.props.post.find(({ Id }) => {
+            return this.props.match.params.mypost_id == Id//'cos the input is No.
+        })
 
         return (
-            <div className="container home">
-                {post}
+            <div className="container">  {post ?
+
+                (<div className="post card orange-text">
+                    <h3 className="center">{post.Title}</h3>
+                    <h3 className="center">{post.Image}</h3>
+                    <p>{post.Body}</p>
+                </div>)//else
+                : (<div className="center">There is none!</div>)
+            }
+
             </div>
         )
     }
+
 }
 
-export default MyPosts;  
+
+let myStateToProps = (state, /* ownProps */) => {
+    return {
+        post: state.myData
+    }
+}
+
+export default connect(myStateToProps)(MyPosts);  

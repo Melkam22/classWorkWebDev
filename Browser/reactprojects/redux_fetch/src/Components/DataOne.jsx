@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 class DataOne extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <h3 className="blue-text">Data one</h3>
-                <p className="post card">
+                <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Inventore debitis neque vitae doloremque quia! Quis minus
                     ab itaque debitis eligendi blanditiis rerum repudiandae.
