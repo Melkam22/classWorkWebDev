@@ -1,0 +1,16 @@
+<!-- cdn jquery copied and put b/n script for json file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+
+<script>
+    $.ajax({
+        type: "POST",
+        url: "/enteruser_post",
+        data: JSON.stringify({
+            firstname: 'Ashu',
+            lastname: 'Shiferaw',
+            email: 'ashu11@hotmail.com'
+        }),
+        contentType: "application/json"
+    })
+</script>
